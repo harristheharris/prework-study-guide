@@ -12,7 +12,94 @@
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
     </header>
     <main>
-      <!-- Student code goes here -->
+      <section class="card" id="html section">
+        <h2>HTML</h2>
+        <ul>
+          <li>The head element contains info about the webpage</li>
+          <li>The body element represents the visible content shown to the user</li>
+          <li>DOCTYPE tells the browser what type of document is being used</li>
+          <li>The title element defines the webpage</li>
+          <li>The meta element is info about the webpage not visible to the user</li>
+          <li>A semeantic element is an element that has a name that describes what the elemetn is e.g. body</li>
+          <li>The img element is used to import pictures from out files. Noteable, this element does not have a closing tag.</li>
+          <li><b>I should take better notes to add to here later</b></li>
+        </ul>
+      </section>
+
+      <section class="card" id="css section">
+        <h2>CSS</h2>
+          <ul>
+            <li>Future CSS notes</li>
+          </ul>
+
+      </section>
+
+      <section class="card" id="git-section">
+        <h2>Git</h2>
+          <ul>
+            <li>git status: checks what branch we are currently on</li>
+            <li>git checkout -b branch-name: creates a new branch and switches to it
+              <ul>
+                <li>
+                  I ran into a problem where i could not change branchs 
+                  without a commit. Through this I found the command 
+                  <u>git stash</u> which allows changes to be 
+                  saved but not commited. 
+                </li>
+              </ul>
+            </li>
+            <li>Through the last bullet point, I learned that by add a ul within a ul, you can creat sub bullet points</li>
+            <li>pwd: display my current location/path </li>
+            <li>ls: display directores and files in current directory</li>
+            <li>cd file-name: the command to move to a directory</li>
+            <li>cd ..: back to last directory</li>
+            <li>history: displays last nth commands</li>
+
+          </ul>
+
+          <h3>Git Workflow steps</h3>
+          <p>These are the workflow steps</p>
+          <ol>
+            <li>git pull origin main: Before we do anything lets first pull the main branch code to assure we are up to date
+              <ul><li>it could be useful to run a <u>git status</u> to see what branch we are in as well</li></ul>
+            </li>
+            <li>git chechout -b feature/name: This creates a feature branch that we name
+              <ul><li>Make certain that branch names are relevent</li></ul>
+              <ul><li>git status is not a bad idea either</li></ul>
+            </li>
+            <li>Make changes to code</li>
+            <li>git add -A: We stage our changes to be commited
+              <ul><li>Note: this above command stages ALL the changes </li></ul>
+            </li>
+            <li>git commit -m "desciption of the changes we jut made" This update the feature branch locally aka a commit
+              <ul><li>We should commit as often as possible</li></ul>
+              <ul><li>QUESTION: is it necassary to commit right after staging?</li></ul>
+            </li>
+            <li>git pull origin main: lets make sure we are up to date again</li>
+            <li>git push origin feature/name: We push our code to the repo feature branch </li>
+            <li>We pull the request on GitHub
+              <ul><li>Make sure we are pulling from the feature branch to the main branch</li></ul>
+            </li>
+            <li>Code will be reviewed</li>
+            <li>Merge pull request on GitHub
+              <ul><li>git checkout main</li></ul>
+              <ul><li>git pull origin main</li></ul>
+            </li>
+            <li>Delete feature branch
+              <ul><li>I actually don't know how to do this</li></ul>
+            </li>
+          </ol>
+          <br>
+          <p>Will have to back through here to correct typos lol. Just another way to practice the workflow I guess, futhermore, some of the steps may need altering</p>
+      </section>
+
+      <section class="card" id="javascript-section">
+        <h2>JavaScript</h2>
+          <ul>
+            <li>Future JaveScript notes</li>
+          </ul>
+
+      </section>
     </main>
 
     <footer>
