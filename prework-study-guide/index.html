@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
+
+    <style>
+      .leanP {
+        font-size: 20px;
+        text-align: left;
+      }
+
+      .meatyP {
+        font-size: 30px;
+        text-align: center;
+        color: red;
+      }
+    </style>
+
   </head>
   <body>
     <header id="top">
@@ -33,7 +47,8 @@
 
         <h3>Terms</h3>
           <ul>
-            <li></li>
+            <li>Margin: how much space we want outside an element</li>
+            <li>Padding: how much space do we want inside an element</li>
           </ul>
 
           <h3>Ways to style using CSS</h3>
@@ -63,21 +78,37 @@
 
           <h3>Declaration Block</h3>
             <div>
-            <img style="height: 250px; width: 500px; " src="./assets/300-css-rule.png" alt="Declaration Block Example">
+            <img style="height: 250px; width: 500px;" src="./assets/300-css-rule.png" alt="Declaration Block Example">
             <span>
             <ul>
-              <li>yum</li>
+              <li>A selector defines the element or attributes to which the rules, or declarations will be applied to</li>
+              <li>A declaration is the property we wish to apply</li>
+              <li>What do we want to change?</li>
+                <ul><li>This is the selector</li></ul>
+              <li>How do we want to change it?</li>
+                <ul><li>This this is the declaration</li></ul>
             </ul>
             </span>
           </div>
         <h3>Box and Display Types</h3>
-        <ul>
-          <li></li>
-        </ul>
+        <img style="height: 250px; width: 500px;" src="./assets/310-box-model.png" alt="Box"> <!--I need to stay away from inline in the future-->
+        <p class="leanP" id="display types">All elements are boxes. There are 2 kinds of boxes:</p>
+        <ol>
+          <li>Inline boxes</li>
+            <ul><li>Height and width values have no effect</li></ul>
+          <li>Block boxes</li>
+            <ul><li>Height and width values are changeable</li></ul>
+        </ol>
+        <p class="leanP" id="display types">Furthermore, there are 2 display types</p>
+          <ol>
+            <li>Outer display</li>
+            <li>Inner display</li>
+          </ol>
       </section>
 
       <section class="card" id="git-section">
         <h2>Git</h2>
+        <h3>Misc. Info</h3>
           <ul>
             <li>git status: checks what branch we are currently on</li>
             <li>git checkout -b branch-name: creates a new branch and switches to it
@@ -131,14 +162,74 @@
             </li>
           </ol>
           <br>
-          <p>Will have to back through here to correct typos lol. Just another way to practice the workflow I guess, futhermore, some of the steps may need altering</p>
+          <p style ="font-size:10px; text-align:left;">Will have to back through here to correct typos lol. Just another way to practice the workflow I guess, futhermore, some of the steps may need altering</p>
       </section>
 
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
+        <h3>Misc. Terms</h3>
           <ul>
-            <li>Future JaveScript notes</li>
+            <li>Function: reuasble code that does something</li>
+            <li>Argument: a value passed as an imput to a function</li>
+            <li>Object: a value in memory which is possible referenced by an identifier</li>
+              <ul><li>Objects are a set of properties</li></ul>
+            <li>Properties: a value associated with an object. There are two types of properties</li>
+              <ul><li>Data properties: a key with a value</li></ul>
+              <ul><li>Accessor properties: a key with 1 or 2 accessor functions to reteive or store a value</li></ul>
+            <li>Control flow: the order a computer executes code in a script</li>
+              <ul><li>In JavaScript this is TOP to BOTTOM</li></ul>
+            <li>Array: a single variable that holds a group of date, typically data that is related</li>
+              <ul><li>Arrays can hold different types of data</li></ul>
+            <li>For loop: a predictiable pattern of indices that perfom a task on all items in the array by allowing a single line of code to execute repeatedly</li>
+
           </ul>
+
+        <h3>Value Types</h3>
+          <ul>
+            <li>Null</li>
+            <li>Undefined:</li>
+            <li>Boolean:</li>
+            <li>Number:</li>
+            <li>BigInt:</li>
+            <li>String:</li>
+            <li>Symbol:</li>
+          </ul>
+        
+          <h3>Misc. Commands</h3>
+            <ul>
+              <li></li>
+            </ul>
+          
+            <h3>For Loops</h3>
+              <p class="leanP" id="a loop contains">A for loop contains 3 statements</p>
+              <ol>
+                <li>Defining variables</li>
+                  <ul><li>This is our starting point</li></ul>
+                  <ul><li>e.g. var x = 0;</li></ul>
+                <li>The conditional</li>
+                  <ul><li>As long as this condtions remains true, the loop will contine</li></ul>
+                  <ul><li>e.g x &lt shapes.length;</li></ul>
+                <li>Iteration</li>
+                  <ul><li>This is the engine that will repeat the process until the condition is not met</li></ul>
+                  <ul><li>e.g. x++ or x+1</li></ul>
+              </ol>
+              <p class="meatyP" id="For loop example">Full Example: for &#40var x = 0; x &lt shapes.length; x++&#41 {}</p>
+
+
+            <h3>Functions</h3>
+              <p class="leanP" id="to use a function">To use a function we must</p>
+              <ol>
+                <li>Define the function</li>
+                <li>Call the function</li>
+              </ol>
+            <h3>Misc. Info</h3>
+              <ul>
+                <li>Our script element always goes to the bottom of the HTML file</li>
+                  <ul>
+                    <li>This is becuase of control flow</li>
+                  </ul>
+                <li></li>
+              </ul>
 
       </section>
     </main>
@@ -149,3 +240,4 @@
     <script src="./assets/script.js"></script>
   </body>
 </html>
+<!--An Apology Is A Promise To Do Things Differently Next Time, And To Keep The Promise.-->
